@@ -1,0 +1,18 @@
+from googleapiclient.discovery import build
+
+API_KEY = "YOUR_API_KEY"
+
+youtube = build(
+    "youtube",
+    "v3",
+    developerKey=API_KEY,
+    cache_discovery=False
+)
+
+request = youtube.search().list(
+    q="AI",
+    part="snippet",
+    maxResults=2
+)
+nano test_api.py
+

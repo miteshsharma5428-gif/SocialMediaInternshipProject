@@ -1,0 +1,15 @@
+{
+    "misinformation_classifier": {
+        "accuracy": 0.8,
+        "precision": 0.8,
+        "recall": 0.8,
+        "f1_score": 0.8
+    },
+    "dataset_summary": {
+        "total_records": 52,
+        "sentiment_distribution": {
+            "NEGATIVE": 35,
+            "POSITIVE": 17
+        }
+    }
+}
