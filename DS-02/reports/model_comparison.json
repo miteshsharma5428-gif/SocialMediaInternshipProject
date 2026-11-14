@@ -1,0 +1,27 @@
+{
+    "Seasonal_Naive_Baseline": {
+        "WAPE": 0.0989,
+        "WAPE_pct": "9.89%",
+        "RMSSE": 0.5896
+    },
+    "Exponential_Smoothing_Baseline": {
+        "WAPE": 0.0703,
+        "WAPE_pct": "7.03%",
+        "RMSSE": 0.3994
+    },
+    "LightGBM_HistGBDT": {
+        "WAPE": 0.0555,
+        "WAPE_pct": "5.55%",
+        "RMSSE": 0.2852
+    },
+    "Deep_Neural_Network": {
+        "WAPE": 0.0556,
+        "WAPE_pct": "5.56%",
+        "RMSSE": 0.287
+    },
+    "Reconciled_Ensemble": {
+        "WAPE": 0.0543,
+        "WAPE_pct": "5.43%",
+        "RMSSE": 0.2773
+    }
+}

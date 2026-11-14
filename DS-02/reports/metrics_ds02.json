@@ -1,0 +1,108 @@
+{
+    "project": "DS-02: Nationwide Demand Forecasting and Inventory Optimization",
+    "solver_engine": "Google OR-Tools (GLOP Linear Optimizer)",
+    "solver_status": "OPTIMAL",
+    "minimized_weekly_inventory_cost_usd": 24.19,
+    "total_recommended_order_units": 4946,
+    "model_accuracy_benchmarks": {
+        "Seasonal_Naive_Baseline": {
+            "WAPE": 0.0989,
+            "WAPE_pct": "9.89%",
+            "RMSSE": 0.5896
+        },
+        "Exponential_Smoothing_Baseline": {
+            "WAPE": 0.0703,
+            "WAPE_pct": "7.03%",
+            "RMSSE": 0.3994
+        },
+        "LightGBM_HistGBDT": {
+            "WAPE": 0.0555,
+            "WAPE_pct": "5.55%",
+            "RMSSE": 0.2852
+        },
+        "Deep_Neural_Network": {
+            "WAPE": 0.0556,
+            "WAPE_pct": "5.56%",
+            "RMSSE": 0.287
+        },
+        "Reconciled_Ensemble": {
+            "WAPE": 0.0543,
+            "WAPE_pct": "5.43%",
+            "RMSSE": 0.2773
+        }
+    },
+    "store_replenishment_plan": [
+        {
+            "state_id": "CA",
+            "store_id": "CA_1_LosAngeles",
+            "item_id": "FOODS_001_OrganicMilk",
+            "current_stock": 400,
+            "predicted_7d_demand": 1142.2,
+            "safety_buffer_units": 104,
+            "optimal_order_qty": 847
+        },
+        {
+            "state_id": "CA",
+            "store_id": "CA_1_LosAngeles",
+            "item_id": "HOUSEHOLD_002_Detergent",
+            "current_stock": 210,
+            "predicted_7d_demand": 599.9,
+            "safety_buffer_units": 64,
+            "optimal_order_qty": 454
+        },
+        {
+            "state_id": "CA",
+            "store_id": "CA_2_SanFrancisco",
+            "item_id": "FOODS_001_OrganicMilk",
+            "current_stock": 362,
+            "predicted_7d_demand": 1033.8,
+            "safety_buffer_units": 116,
+            "optimal_order_qty": 788
+        },
+        {
+            "state_id": "CA",
+            "store_id": "CA_2_SanFrancisco",
+            "item_id": "HOUSEHOLD_002_Detergent",
+            "current_stock": 182,
+            "predicted_7d_demand": 521.0,
+            "safety_buffer_units": 49,
+            "optimal_order_qty": 388
+        },
+        {
+            "state_id": "NY",
+            "store_id": "NY_1_NewYork",
+            "item_id": "FOODS_001_OrganicMilk",
+            "current_stock": 449,
+            "predicted_7d_demand": 1282.9,
+            "safety_buffer_units": 75,
+            "optimal_order_qty": 909
+        },
+        {
+            "state_id": "NY",
+            "store_id": "NY_1_NewYork",
+            "item_id": "HOUSEHOLD_002_Detergent",
+            "current_stock": 232,
+            "predicted_7d_demand": 662.4,
+            "safety_buffer_units": 60,
+            "optimal_order_qty": 491
+        },
+        {
+            "state_id": "TX",
+            "store_id": "TX_1_Austin",
+            "item_id": "FOODS_001_OrganicMilk",
+            "current_stock": 331,
+            "predicted_7d_demand": 946.4,
+            "safety_buffer_units": 91,
+            "optimal_order_qty": 707
+        },
+        {
+            "state_id": "TX",
+            "store_id": "TX_1_Austin",
+            "item_id": "HOUSEHOLD_002_Detergent",
+            "current_stock": 169,
+            "predicted_7d_demand": 483.0,
+            "safety_buffer_units": 48,
+            "optimal_order_qty": 362
+        }
+    ]
+}
